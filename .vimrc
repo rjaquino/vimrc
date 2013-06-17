@@ -1,6 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" The Best vimrc Ever
-" Tommy MacWilliam <tmacwilliam@cs.harvard.edu>
+" R.J.'s vimrc
+" R.J. Aquino <rj@cs.harvard.edu>
+" forked from Tommy MacWilliam <tmacwilliam@cs.harvard.edu>
 "
 " Be sure to read the README!
 "
@@ -15,8 +16,9 @@
 "   ,h: open a shell in a new tab
 "   ,k: syntax-check the current file
 "   ,m: toggle mouse support
-"   ,p: toggle paste mode
 "   ,o: open file
+"   ,p: toggle paste mode
+"   ,r: regex for multiple cursor placement
 "   ,s: split window
 "   ,t: new tab
 "   ,w: close tab
@@ -63,6 +65,7 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'kshenoy/vim-signature'
 Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'gregsexton/gitv'
+Bundle 'terryma/vim-multiple-cursors'
 
 " syntax files
 Bundle 'jelera/vim-javascript-syntax'
@@ -74,6 +77,10 @@ let g:checksyntax#auto_mode = 0
 
 " taglist config
 let g:Tlist_Use_Right_Window = 1
+
+" multiple-cursors config
+let g:multi_cursor_exit_from_visual_mode = 0
+let g:multi_cursor_exit_from_insert_mode = 0
 
 " syntax highlighting and auto-indentation
 syntax on
@@ -179,6 +186,7 @@ nnoremap <leader>p :set invpaste<CR>
 nnoremap <leader>t :tabnew<CR>
 nnoremap <leader>s :vsplit<CR>
 nnoremap <leader>w :tabclose<CR>
+nnoremap <leader>r :MultipleCursorsFind 
 
 " ; is better than :, and kj is better than ctrl-c
 nnoremap ; :

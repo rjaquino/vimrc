@@ -1,11 +1,11 @@
-The Best .vimrc Ever (tm)
+R.J.'s .vimrc
 ---
 
 ## Installation:
 
     yum install ack ctags
     mkdir ~/.vim
-    git clone git://github.com/tmacwill/vimrc.git ~/.vim
+    git clone git://github.com/rjaquino/vimrc.git ~/.vim
     ln -s ~/.vim/.vimrc ~/.vimrc
     vim +BundleInstall +qall
 
@@ -32,8 +32,9 @@ Other available (awesome) colorschemes:
 * ,h: open a shell in a new tab
 * ,k: syntax-check the current file
 * ,m: toggle mouse support
-* ,p: toggle paste mode
 * ,o: open file
+* ,p: toggle paste mode
+* ,r: insert regex for multiple cursors
 * ,s: split window
 * ,t: new tab
 * ,w: close tab
