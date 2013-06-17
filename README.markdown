@@ -1,4 +1,5 @@
 R.J.'s .vimrc
+forked from [tmacwill](http://github.com/tmacwill/vimrc)
 ---
 
 ## Installation:
