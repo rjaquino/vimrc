@@ -22,6 +22,7 @@
 "   ,s: split window
 "   ,t: new tab
 "   ,w: close tab
+"   ,.: search tags
 "   kj: enter normal mode and save
 "   Ctrl+{h,j,k,l}: move among windows
 "   ii: operate on all text at current indent level
@@ -65,7 +66,6 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'kshenoy/vim-signature'
 Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'gregsexton/gitv'
-Bundle 'terryma/vim-multiple-cursors'
 
 " syntax files
 Bundle 'jelera/vim-javascript-syntax'
@@ -183,10 +183,11 @@ nnoremap <leader>l :NERDTreeTabsToggle<CR>
 nnoremap <leader>k :CheckSyntax<CR>
 nnoremap <leader>o :CtrlP<CR>
 nnoremap <leader>p :set invpaste<CR>
-nnoremap <leader>t :tabnew<CR>
+nnoremap <leader>r :MultipleCursorsFind
 nnoremap <leader>s :vsplit<CR>
+nnoremap <leader>t :tabnew<CR>
 nnoremap <leader>w :tabclose<CR>
-nnoremap <leader>r :MultipleCursorsFind 
+nnoremap <leader>. :CtrlPTag<CR>
 
 " ; is better than :, and kj is better than ctrl-c
 nnoremap ; :
