@@ -1,5 +1,5 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" R.J.'s vimrc
+" R.J.'s new vimrc
 " R.J. Aquino <rj@cs.harvard.edu>
 " forked from Tommy MacWilliam <tmacwilliam@cs.harvard.edu>
 "
